@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial;
+  background-color: white;
+}
+
+main {
+  padding: 20px 0;
+}
+
+header {
+  background-color: #403933;
+  background-image: url(bmv.jpg);
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 42px;
+  color: #c5c0b8;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ---  used mobile first layout column --- */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+/* ---  media queries for 600and greater pixel --- */
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 72px;
+  }
+}
+
+/* ---  Primary Groups --- */
+
+section {
+  margin-bottom: 100px;
+}
+
+section.dark-background {
+  background-color: #c5c0b8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 80px 0;
+}
+
+footer {
+  background-color: #403933;
+  background-image: url(bmv.jpg);
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #403933;
+}
+
+a:active {
+  color: #403933;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+form {
+  padding-right: 8px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
