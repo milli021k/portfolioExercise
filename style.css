@@ -23,8 +23,6 @@ header {
   padding: 20px;
 }
 
-/* ---  used mobile first layout column --- */
-
 header {
   display: flex;
   flex-direction: column;
@@ -52,8 +50,6 @@ header nav ul li a:hover {
   color: #bdbdbd;
 }
 
-/* ---  media queries for 600and greater pixel --- */
-
 @media all and (min-width: 600px) {
   header {
     display: flex;
@@ -73,8 +69,6 @@ header nav ul li a:hover {
     font-size: 72px;
   }
 }
-
-/* ---  Primary Groups --- */
 
 section {
   margin-bottom: 100px;
@@ -148,8 +142,6 @@ form textarea {
 form textarea {
   height: 160px;
 }
-
-/* ---  (Desktop) Groups & Items --- */
 
 @media all and (min-width: 800px) {
   section {
