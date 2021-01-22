@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Helvetica, Arial;
-  background-color: white;
+  background-image: url(swm.jpg);
 }
 
 main {
@@ -143,4 +143,9 @@ form textarea {
   .group {
     flex-direction: row;
   }
+}
+
+.item-double iframe {
+  width: 100%;
+  border: 0;
 }
